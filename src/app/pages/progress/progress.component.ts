@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./progress.component.css']
 })
 export class ProgressComponent implements OnInit {
+  
+  progreso: number = 50;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  cambiarValor(valor) {
+    if ( (this.progreso + valor > 100) || (this.progreso + valor < 0) ) {
+      return;
+    }
+
+    this.progreso += valor;
   }
 
 }
