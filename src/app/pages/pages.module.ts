@@ -17,6 +17,7 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 // temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GradficoDonaComponent } from '../components/gradfico-dona/gradfico-dona.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
     declarations: [
@@ -25,7 +26,8 @@ import { GradficoDonaComponent } from '../components/gradfico-dona/gradfico-dona
         ProgressComponent,
         Graficas1Component,
         IncrementadorComponent,
-        GradficoDonaComponent
+        GradficoDonaComponent,
+        AccountSettingsComponent
     ],
     exports: [
         DashboardComponent,
